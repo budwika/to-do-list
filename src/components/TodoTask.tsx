@@ -1,8 +1,23 @@
 import React from 'react'
+import { ITask } from '../Interfaces'
+import '../App.css';
 
-const TodoTask = () => {
+interface Props{
+    task: ITask;
+    completeTask(taskNameToDelete: String): void;
+}
+
+const TodoTask = ({task, completeTask}: Props) => {
     return (
-        <div> Task </div>
+        <div className="task">
+            <div className="content">
+                <span>{task.taskName}</span>
+            </div> 
+            <button 
+                onClick={() => {
+                    completeTask(task.taskName);
+                    }}>X</button>
+        </div>
     )
 }
 

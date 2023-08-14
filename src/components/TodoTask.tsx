@@ -2,15 +2,14 @@ import React, {useState} from 'react'
 import { ITask } from '../interface/tasks'
 import '../App.css';
 
-
-interface Props{
+interface ITodoTaskProps{
     task: ITask;
     deleteTask(taskNameToDelete: number): void;
     completeTask(taskNameToDelete: number, value: number): void;
     editTask(taskIndex: number, value: string): void;
 }
 
-const TodoTask = ({task, deleteTask, completeTask, editTask}: Props) => {
+const TodoTask = ({task, deleteTask, completeTask, editTask}: ITodoTaskProps) => {
     const [edit, setEdit] = useState<string>(task.taskName);
     const [title, setTitle] = useState<boolean>(false);
     

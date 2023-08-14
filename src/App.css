@@ -33,7 +33,7 @@ body{
 
 .header input{
   width: 25rem;
-  height: 3.5rem;
+  height: 2.5rem;
   border:none;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
@@ -41,6 +41,7 @@ body{
   border-top-left-radius: .5rem;
   font-size: 17px;
   border:1px solid grey;
+  padding: 0.5rem;
 }
 
 .header button{
@@ -53,6 +54,7 @@ body{
   border-top-left-radius: .5rem;
   padding-left: 10px;
   cursor:pointer;
+  background-color: rgb(233, 91, 39);
 }
 
 .header label {

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { ITask } from '../interface/tasks'
 import '../App.css';
 
+
 interface Props{
     task: ITask;
     deleteTask(taskNameToDelete: number): void;

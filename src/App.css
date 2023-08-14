@@ -68,6 +68,7 @@ select {
   padding: 0.8rem;
   border: 0 ;
   background-color: lightblue;
+  margin-bottom: 1rem ;
 }
 
 .todoList{
